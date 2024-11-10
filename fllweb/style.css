@@ -1,0 +1,245 @@
+
+
+html,body{
+    scroll-behavior: smooth ;
+}
+
+
+body{
+    background-image: url("images/web_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    
+    
+}
+
+.container{
+    width: 100%;
+}
+
+header {
+    height: 200px;
+    background-color: #ffffffba;
+      /* background-blend-mode: overlay;  */
+    background-image: url("images/header_bg.jpeg");
+    background-size:cover;    
+    background-position:  bottom center;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  
+}
+header h1{
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000;
+    margin: 0;
+}
+
+
+
+ul.nav-list{
+    list-style-type: none;  
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 998;
+    bottom: 0;
+
+}
+
+ul.nav-list li{ 
+    width: 100%;
+    height: 60px;
+    border-right: 1px solid #fff;
+
+}
+
+
+ul.nav-list li a{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    height: 100%;
+    color: #ffffff;
+    background-color: #5151A2;
+
+
+}
+
+ul.nav-list li:last-child{
+    border-right: none;
+  
+   }
+
+ul.nav-list a:hover{
+    background-color: #c1c1f4;
+    color: #4f127a;
+    border-bottom: 3px solid #a300d4;
+}
+
+.banner{
+    height: 200px;
+    background-image: url("images/banner_bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+
+}
+main{
+    background-color: #b5b5db82;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.mm{
+    margin-bottom: 50px;
+}
+
+.mm h2{
+    margin: 0;
+        text-align: center;
+    color: rgb(46, 0, 84) ;
+    font-size: 28px;
+    /* background-color: #F3F3FA; */
+}
+.mm p{
+    text-align: center;
+    color: rgb(55, 55, 56);
+}
+.mm ul{
+    color: rgb(55, 55, 56);
+}
+.mm img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    height: 100px;
+    background-color: #8f8fdb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 60px;
+}
+
+footer h6{
+    margin: 0;
+}
+
+.floating-image {
+    position: fixed;
+      right:-20px;  
+       bottom: 50px;    
+     z-index: 9999; 
+}
+
+
+.floating-image a{
+    
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width:150px;
+    height: 150px;
+    background-image: url("images/cute.png");
+    background-size: contain;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+.floating-image {
+    animation: shake 2s infinite; /* 每 2 秒重複一次動畫 */
+}
+@keyframes shake {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-30px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+   
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    height: 300px;
+  
+}
+header h1{
+    font-size: 40px;
+}
+
+
+
+ul.nav-list{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    position: static;
+}
+
+ul.nav-list li{ 
+    width: 20%;
+    height: 60px;
+}
+
+ul.nav-list li a{
+    border-radius: 10px;
+    font-size: 24px;
+}
+ul.nav-list a:hover{
+    border-bottom: 3px solid #a300d4;
+}
+
+
+
+.banner{
+    height: 400px;
+}
+
+
+
+.mm img{
+    width: 1000px;
+}
+
+
+.floating-image {
+    right: 30px;  
+       bottom: 10px;    
+}
+.floating-image a{
+   width: 200px;
+   height: 200px;
+
+}
+
+
+}
